@@ -75,7 +75,7 @@ export const Login = () => {
           };
           console.log(signUpDetails);
           try {
-            await axios.post(`${process.env.REACT_APP_SEVER_URL}signup`, {
+            await axios.post(`${process.env.REACT_APP_SEVER_URL}/signup`, {
               name: name,
               email: email,
               password: password,
